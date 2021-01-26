@@ -2,10 +2,7 @@
   <h1>
     {{title}}
   </h1>
-  <!-- property binding -->
-  <img [src]="catGif" [alt]="catGifAlt">
-  <app-dog-details name= 'Glen'></app-dog-details>
-  <app-dog-details name= 'Tim'></app-dog-details>
-  <app-dog-details  [name]= 'dog1.name' [color]= 'dog1.color' (nameChange)='changeDog1($event)'></app-dog-details>
-  <app-dog-details  [name]= 'dog2.name' [color]= 'dog2.color' (bark)='doBark(dog2.name)'></app-dog-details>
+  <input type="text" [(ngModel)]="title" placeholder="title">
+  <app-dog-list></app-dog-list>
+
 </div>

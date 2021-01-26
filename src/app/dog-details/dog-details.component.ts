@@ -13,6 +13,7 @@ export class DogDetailsComponent implements OnInit {
 
   @Output() bark = new EventEmitter<{}>()
   @Output() nameChange = new EventEmitter<string>()
+  @Output() colorChange = new EventEmitter<string>()
   handleClick(){
     this.bark.emit({})
   }
@@ -20,6 +21,10 @@ export class DogDetailsComponent implements OnInit {
   handleNameChange(e){
     console.log(e.target.value);
     this.nameChange.emit(e.target.value);
+  }
+
+  handleColorChange(e){
+    this.colorChange.emit(e.target.value)
   }
   ngOnInit(): void {
   }

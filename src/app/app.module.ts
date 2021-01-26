@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DogDetailsComponent } from './dog-details/dog-details.component';
+import { DogListComponent } from './dog-list/dog-list.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    DogDetailsComponent
+    DogDetailsComponent,
+    DogListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

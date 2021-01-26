@@ -1,0 +1,9 @@
+<div class="container">
+  <!-- property binding -->
+    <!-- two way binding using [()]-->
+
+  <app-dog-details
+    [(name)]="dog1.name"
+    [(color)]="dog1.color"
+    (nameChange)="changeDog1($event)"></app-dog-details>
+</div>
