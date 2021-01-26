@@ -11,4 +11,12 @@ export class AppComponent {
   catGifAlt='Cat gif alternative text';
   dog1={name:'Harry', color:'brown'}
   dog2={name:'Barry', color:'white'}
+ 
+  doBark(name:string){
+    console.log(`${name} has barked`);
+  }
+
+  changeDog1(name){
+    this.dog1.name  = name;
+  }
 }
