@@ -1,4 +1,5 @@
-<h5> {{name}} - {{color}} </h5>
+<!-- ngStyle is a directive dynamically create/edit styles and its requires an object -->
+<h5> {{name}} - <span [ngStyle]= 'colorStyles'>{{color}}</span></h5>
 <input type="text" (input)='handleNameChange($event)' placeholder="name"/>
 <input type="text" (input)='handleColorChange($event)' placeholder='color'/>
 <button class="btn btn-waves" (click)="handleClick()">Bark</button>

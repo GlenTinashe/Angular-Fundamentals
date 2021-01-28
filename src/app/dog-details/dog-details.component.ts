@@ -14,6 +14,15 @@ export class DogDetailsComponent implements OnInit {
   @Output() bark = new EventEmitter<{}>()
   @Output() nameChange = new EventEmitter<string>()
   @Output() colorChange = new EventEmitter<string>()
+
+
+  colorStyles={
+    color: this.goTeal(),
+    fontSize: '2em'
+  }
+   goTeal(){
+     return "teal"
+   }
   handleClick(){
     this.bark.emit({})
   }
