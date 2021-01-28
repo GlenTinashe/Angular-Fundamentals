@@ -1,9 +1,11 @@
 <div class="container">
+
+  <app-dog-details *ngFor='let dog of dogs' [(name)]='dog.name' [(color)]='dog.color'></app-dog-details>
   <!-- property binding -->
     <!-- two way binding using [()]-->
 
-  <app-dog-details
+  <!-- <app-dog-details
     [(name)]="dog1.name"
     [(color)]="dog1.color"
-    (nameChange)="changeDog1($event)"></app-dog-details>
+    (nameChange)="changeDog1($event)"></app-dog-details> -->
 </div>

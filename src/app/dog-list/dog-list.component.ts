@@ -20,6 +20,13 @@ export class DogListComponent implements OnInit {
   changeDog1(name){
     this.dog1.name  = name;
   }
+
+ dogs: any[] =[
+    {name:'Jimmy Blue', color: 'blue'},
+    {name:'Kelly', color: 'yellow'},
+    {name: 'Michael', color: 'red'},
+    {name:'Timmy', color: 'goldenrod'},
+  ]
   ngOnInit(): void {
   }
 
