@@ -1,11 +1,17 @@
 <div class="container">
 
-  <app-dog-details *ngFor='let dog of dogs' [(name)]='dog.name' [(color)]='dog.color'></app-dog-details>
+  <!-- ngFor tells angular that its an ngFor template -->
+  <!-- [ngForOf]='dogs' tells angular that the ngFor is for dogs -->
+  <ng-template ngFor let-dog [ngForOf]='dogs'>
+
+    <app-dog-details *ngIf='!dog.leash' [(name)]='dog.name' [(color)]='dog.color'></app-dog-details>
+  
+  </ng-template>
   <!-- property binding -->
     <!-- two way binding using [()]-->
 
   <!-- <app-dog-details
-    [(name)]="dog1.name"
+    [(name)]="dog1.name"  
     [(color)]="dog1.color"
     (nameChange)="changeDog1($event)"></app-dog-details> -->
 </div>

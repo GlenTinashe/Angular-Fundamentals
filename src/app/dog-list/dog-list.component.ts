@@ -22,10 +22,10 @@ export class DogListComponent implements OnInit {
   }
 
  dogs: any[] =[
-    {name:'Jimmy Blue', color: 'blue'},
-    {name:'Kelly', color: 'yellow'},
-    {name: 'Michael', color: 'red'},
-    {name:'Timmy', color: 'goldenrod'},
+    {name:'Jimmy Blue', color: 'blue',  leash: true},
+    {name:'Kelly', color: 'yellow',  leash: false},
+    {name: 'Michael', color: 'red',  leash: true},
+    {name:'Timmy', color: 'goldenrod',  leash: false},
   ]
   ngOnInit(): void {
   }
