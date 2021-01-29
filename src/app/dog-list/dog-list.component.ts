@@ -13,6 +13,9 @@ export class DogListComponent implements OnInit {
   catGifAlt='Cat gif alternative text';
   dog1={name:'Harry', color:'brown'}
   dog2={name:'Barry', color:'white'}
+  dogStyle(dog){
+    return {'collection-item':true, 'blue': !dog.leash}
+  }
  
   doBark(name:string){
     console.log(`${name} has barked`);

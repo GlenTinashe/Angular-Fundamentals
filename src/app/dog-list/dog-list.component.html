@@ -1,5 +1,12 @@
 <div class="container">
 
+<!-- ngClass add/removes css elements on an html document -->
+  <div class="collection">
+    <div *ngFor='let dog of dogs' [ngClass]="dogStyle(dog)">
+        {{dog.name}}
+    </div>
+  </div>
+
   <!-- ngFor tells angular that its an ngFor template -->
   <!-- [ngForOf]='dogs' tells angular that the ngFor is for dogs -->
   <ng-template ngFor let-dog [ngForOf]='dogs'>
